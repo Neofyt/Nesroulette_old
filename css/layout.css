@@ -41,6 +41,48 @@ a {
     overflow: hidden;
 }
 
+nav {
+    margin-left: 40px;
+}
+
+    nav a {
+        background: #fff;
+        border: solid 1px #ccc;
+        padding: 3px 5px;
+        display: inline-block;
+        float: left;
+        color: #ccc;
+    }
+
+    nav a:hover {
+        background-color: #888;
+        border-color: #888;
+        color: #fff;
+    }
+
+    nav a:not(.selected):hover + a{
+        border-left: solid 1px #888;
+    }
+
+    nav a:first-child{
+        border-radius: 3px 0 0 3px;
+        border-right: 0;
+    }
+
+    nav a:nth-child(2){
+        border-right: 0;
+    }
+
+    nav a:last-child{
+        border-radius: 0  3px 3px 0;
+    }
+
+    nav a.selected {
+        background: #ccc;
+        color: #fff;
+        border-color: #ccc;
+    }
+
 [role="main"] {
     width: 80%;
     float: left;

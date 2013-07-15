@@ -11,18 +11,12 @@
 	<body>
 		<div id="wrap">  
 	    
-	 	   <input type="checkbox" id="width_sidebar" role="button" checked>
+	 	   <input type="checkbox" id="width_sidebar" role="button" >
 	 	   <label for="width_sidebar"><span>hide the sidebar</span><span>Hide settings</span><span>Show settings</span></label>    
 		
 	 	   <div role="main">
 
-	   	 		<h1>Nes'roulette <span>- let the game begin...</span></h1>
-
-	   	 		<nav>
-	   	 			<a href="#" class="selected">Roulette</a>
-	   	 			<a href="#">Report</a>
-	   	 			<a href="#">Settings</a>
-	   	 		</nav>
+	   	 		<h1>Nes'roulette <span>- let the game begin...</span></h1> 
 	        
 	  	  		<table id="coffees">
 	  	  			<thead>
@@ -342,7 +336,7 @@
 						indicateStrength(coffeeClass);
 
 				} else {
-					displayMessage('Please pick your coffees first !!', '#ffdfdf', 'red', true, 'none');
+					displayMessage('Please pick your coffees first !!', '#ffdfdf', 'red', true);
 				}
 			}
 
@@ -516,23 +510,10 @@
 				}
 			}
 
-			function displayMessage(message, bg, color, timeout, pointer){
+			function displayMessage(message, bg, color, timeout){
 				if (window.timer) clearTimeout(window.timer);
-				$("#allPurpose").text(message).css({'background': bg, 'color': color, 'pointer-events': pointer});
-				console.log(bg);
-				
-				if (timeout) {
-					window.timer = setTimeout("displayMessage('Pick one !!', '#ccc', '#fff', false, 'auto')", 1000);
-				}
-
-				if (!timeout){
-					$("#allPurpose").mouseover(function () {
-					    $(this).css("background","#888");
-					 })
-					.mouseout(function () {
-					    $(this).css("background","#ccc");
-					 });
-				}
+				$("#allPurpose").text(message).css({'background': bg, 'color': color});
+				if (timeout) window.timer = setTimeout("displayMessage('Pick one !!', '#ccc', '#fff', false)", 1000)
 			}
 
 			function selectStrength(strength, selected){ // strengths = [1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,],
@@ -593,26 +574,6 @@
 
 			}
 
-			//var limit = 100;
-			//var amount = 12;
-			//var numbers = [];
-			//var rand;
-
-			//function makeRandom(){
-			//    rand = Math.floor(Math.random()*(limit + 1));
-			//    if(numbers.indexOf(rand) > -1){
-			//        return makeRandom();
-			//    } else {
-			//        return rand;      
-			//    }
-			//}
-
-			//while(amount--){
-			//    numbers.push(makeRandom());            
-			//}    
-
-			//console.log(numbers);
-
 			$(document).ready(function() {
 
 				// LAYOUT
@@ -627,7 +588,7 @@
 					} else {
 						if(coffee === "lun"){ coffee = "Deca. lun." };
 						if(coffee === "int"){ coffee = "Deca. int." };
-						displayMessage('There is no available cup for ' + coffee, '#ffdfdf', 'red', true, 'none');
+						displayMessage('There is no available cup for ' + coffee, '#ffdfdf', 'red', true);
 					}
 					
 					saveList();
