@@ -1,6 +1,6 @@
 .bar-chart {
     width: 700px;
-    height: 500px;
+    height: 470px;
     padding-top: 1em;
     position: relative;
     text-align: left;
@@ -21,7 +21,7 @@
 .bar-chart p em:first-child {
     top: 0;
     left: 0;
-    width: 500px;
+    width: 458px;
     height: 1em;
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);

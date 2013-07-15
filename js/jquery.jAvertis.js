@@ -95,16 +95,16 @@
 		}
 	};
 	$.fn.jav.defaults = {
-		type				: 'success',
-		position		 	: 'top',
+		type			: 'tooltip',
+		position		: 'top',
 		close		    : false,
-		time			 	: 5000,
-		movable		: true,
+		time			: 5000,
+		movable			: true,
 		sticky			: false,
 		modal			: '#jav-box',
 		image			: '',
 		imageFile		: 'img/',
-		tooltipStyle	: ''
+		tooltipStyle	: 'tooltip'
 	};
 	
 })(jQuery);

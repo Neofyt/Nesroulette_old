@@ -2,134 +2,176 @@
 <html manifest="offline.appcache">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Gimme my nespresso !!</title>
+		<title>Nes'roulette - let the game begin...</title>
 		<link rel="shortcut icon" type="image/png" href="about:blank" />
 		<link rel="stylesheet" type="text/css" href="css/layout.css" />
 		<link rel="stylesheet" type="text/css" href="css/barchart.css" />
-		<script type="text/javascript" src="js/prefixfree.min.js"></script>
+		<!--<script type="text/javascript" src="js/prefixfree.min.js"></script>-->
 	</head>
-
 	<body>
+		<div id="wrap">  
+	    
+	 	   <input type="checkbox" id="width_sidebar" role="button" >
+	 	   <label for="width_sidebar"><span>hide the sidebar</span><span>Hide settings</span><span>Show settings</span></label>    
+		
+	 	   <div role="main">
 
-		<!-- Left slider for implementing number of cups -->
-		<table id="slider">
-			<thead>
-				<tr>
-					<th colspan="4">How many cups ?</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td class="Arpeggio">Arpeggio</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Arpeggio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Capriccio">Capriccio</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Capriccio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Cosi">Cosi</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Cosi" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Deca">Deca</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Deca" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="lun">Deca. lun.</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="lun" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="int">Deca. int.</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="int" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Dulsao">Dulsao</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Dulsao" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Finezzo">Finezzo</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Finezzo" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Fortissio">Fortissio</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Fortissio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Indriya">Indriya</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Indriya" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Kazaar">Kazaar</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Kazaar" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Livanto">Livanto</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Livanto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Ristretto">Ristretto</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Ristretto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Roma">Roma</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Roma" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Rosabaya">Rosabaya</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Rosabaya" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>				
-				<tr>
-					<td class="Vivalto">Vivalto</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Vivalto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-				<tr>
-					<td class="Volluto">Volluto</td>
-					<td class="dec">&#8210;</td><td><input type="text" name="Volluto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
-				</tr>
-			</tbody>
-		</table>
+	   	 		<h1>Nes'roulette <span>- let the game begin...</span></h1> 
+	        
+	  	  		<table id="coffees">
+	  	  			<thead>
+	  	  				<tr>
+	  	  					<th></th>
+	  	  					<th></th>
+	  	  					<th></th>
+	  	  					<th></th>
+	  	  				</tr>
+	  	  			</thead>
+					<tbody>
+						<tr>
+							<td class="coffee" id="Arpeggio">Arpeggio</td>
+							<td class="coffee" id="Capriccio">Capriccio</td>
+							<td class="coffee" id="Cosi">Cosi</td>
+							<td class="coffee" id="Deca">Deca</td>
+						</tr>
+						<tr>
+							<td class="coffee" id="int">Deca. int.</td>
+							<td class="coffee" id="lun">Deca. lun.</td>
+							<td class="coffee" id="Dulsao">Dulsao</td>
+							<td class="coffee" id="Finezzo">Finezzo</td>
+						</tr>
+						<tr>
+							<td class="coffee" id="Fortissio">Fortissio</td>
+							<td class="coffee" id="Indriya">Indriya</td>
+							<td class="coffee" id="Livanto">Livanto</td>
+							<td class="coffee" id="Ristretto">Ristretto</td>
+						</tr>
+						<tr>
+							<td class="coffee" id="Roma">Roma</td>
+							<td class="coffee" id="Rosabaya">Rosabaya</td>
+							<td class="coffee" id="Vivalto">Vivalto</td>
+							<td class="coffee" id="Volluto">Volluto</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4" id="allPurpose" class="chooseOne">Pick one !!</td>
+						</tr>
+					</tfoot>
+				</table>
 
-		<!-- Roulette -->
-		<div id="content">
+	    	</div><!-- /main -->
+	       
+		    <aside role="complimentary">
+		 	   	<form>
+		 	   		<p>Login</p>
+		 	   		<input type="text" id="login" placeholder=""></input>
+		 	   		<br />
+		 	   		<input type="password" id="password" placeholder=""></input>
+		 	   		<br />
+			    	<a href="#">Connect</a>
+		 	   	</form>
+			
+			    <table id="slider">
+					<thead>
+						<tr>
+							<th colspan="4">How many cups ?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="Arpeggio">Arpeggio</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Arpeggio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Capriccio">Capriccio</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Capriccio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Cosi">Cosi</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Cosi" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Deca">Deca</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Deca" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="int">Deca. int.</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="int" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="lun">Deca. lun.</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="lun" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Dulsao">Dulsao</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Dulsao" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Finezzo">Finezzo</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Finezzo" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Fortissio">Fortissio</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Fortissio" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Indriya">Indriya</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Indriya" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Livanto">Livanto</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Livanto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Ristretto">Ristretto</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Ristretto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Roma">Roma</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Roma" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Rosabaya">Rosabaya</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Rosabaya" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>				
+						<tr>
+							<td class="Vivalto">Vivalto</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Vivalto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+						<tr>
+							<td class="Volluto">Volluto</td>
+							<td class="dec">&#8210;</td><td><input type="text" name="Volluto" id="" value="0" disabled /></td><td class="inc">&#43;</td>
+						</tr>
+					</tbody>
+				</table> 
+				<p>Select strength(s):</p>
+				<p id="chooseStrength">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+					<span>7</span>
+					<span>8</span>
+					<span>9</span>
+					<span>10</span>
+				</p>
+				<br />
+				<p>More</p>
+				<a href="#" id="report">Consommation report</a>
+		  	</aside>
+		</div><!-- #wrap -->
 
-			<div id="login">
-				<a href="#">Login</a>
-			</div>
-
-			<h1>Gimme my nespresso !!</h1>
-
-			<div id="cafes">
-				<p>Pick your coffees...</p>
-				<ul class="reset">
-					<li><a href="#" class="coffee" id="Livanto">Livanto</a></li>
-					<li><a href="#" class="coffee" id="Roma">Roma</a></li>
-					<li><a href="#" class="coffee" id="Arpeggio">Arpeggio</a></li>
-					<li><a href="#" class="coffee" id="Ristretto">Ristretto</a></li>
-					<li><a href="#" class="coffee" id="int">Deca. int.</a></li>
-					<li><a href="#" class="coffee" id="Deca">Deca</a></li>
-					<li><a href="#" class="coffee" id="lun">Deca. lun.</a></li>
-					<li><a href="#" class="coffee" id="Fortissio">Fortissio</a></li>
-					<li><a href="#" class="coffee" id="Vivalto">Vivalto</a></li>
-					<li><a href="#" class="coffee" id="Finezzo">Finezzo</a></li>
-					<li><a href="#" class="coffee" id="Indriya">Indriya</a></li>
-					<li><a href="#" class="coffee" id="Rosabaya">Rosabaya</a></li>
-					<li><a href="#" class="coffee" id="Dulsao">Dulsao</a></li>
-					<li><a href="#" class="coffee" id="Cosi">Cosi</a></li>
-					<li><a href="#" class="coffee" id="Volluto">Volluto</a></li>
-					<li><a href="#" class="coffee" id="Capriccio">Capriccio</a></li>
-					<li><a href="#" class="coffee" id="Kazaar">Kazaar</a></li>
-				</ul>			
-			</div>
-
-			<footer>
-				<a href="#" class="button chooseOne">Ok, choose one for me plz !!</a>
-				<span><a href="#" id="report">How many coffees did I drink ?</a> - Created by Neofyt &copy;2012</span>
-			</footer>
-		</div>
+		<footer>
+			Created by Neofyt &copy;2012 <br />
+			This site is not affiliated with Nespresso<sup>&reg;</sup>
+		</footer>
 
 		<!-- Result panel -->
 		<div id="verdict">
+			<div id="close">X</div>
 			<h1></h1>
 			<table id="scale">
 				<thead>
@@ -165,7 +207,7 @@
 				<a href="#" class="button chooseOne">Nah !! Gimme another !!</a>
 				<a href="#" class="button" id="takeThisOne">Ok !! I'll take this one !!</a>
 			</div>
-		</div>
+		</div><!-- #verdict -->
 
 		<!-- Report modal -->
 		<div id="reportMod" class="modal">
@@ -205,37 +247,33 @@
 				</dl>
 				<dl>                                          		
 					<dt>Indriya</dt><dd id="dd18" class="Indriya"></dd>                
-				</dl>
-				<dl>                         
-					<dt>Kazaar</dt><dd id="dd20" class="Kazaar"></dd>
 				</dl>             
 				<dl> 
-					<dt>Livanto</dt><dd id="dd22" class="Livanto"></dd>
+					<dt>Livanto</dt><dd id="dd20" class="Livanto"></dd>
 				</dl>     
 				<dl>   
-					<dt>Ristretto</dt><dd id="dd24" class="Ristretto"></dd>
+					<dt>Ristretto</dt><dd id="dd22" class="Ristretto"></dd>
 				</dl>      
 				<dl>     		
-					<dt>Roma</dt><dd id="dd26" class="Roma"></dd>              
+					<dt>Roma</dt><dd id="dd24" class="Roma"></dd>              
 				</dl>
 				<dl>    
-					<dt>Rosabaya</dt><dd id="dd28" class="Rosabaya"></dd>
+					<dt>Rosabaya</dt><dd id="dd26" class="Rosabaya"></dd>
 				</dl>                 
 				<dl>                                                  		
-					<dt>Vivalto</dt><dd id="dd30" class="Vivalto"></dd>                       
+					<dt>Vivalto</dt><dd id="dd28" class="Vivalto"></dd>                       
 				</dl>
 				<dl>                                                	
-					<dt>Volluto</dt><dd id="dd32" class="Volluto"></dd>                   
+					<dt>Volluto</dt><dd id="dd30" class="Volluto"></dd>                   
 				</dl> 
 			</div>
-
 			<br />
 			<p>So far, you've drank <span id="total"></span> coffees...</p>
-		</div>
+		</div><!-- #reportMod -->
 
 		<script src="js/jquery-1.7.2.min.js"></script>
-		<script src="js/mobilyblocks.js"></script>
 		<script src="js/jquery.jAvertis.js"></script>
+
 		<script>
 
 			// VARIABLES
@@ -243,19 +281,28 @@
 					ctx = canvas.getContext('2d'),
 					doses = new Array('short','long'),
 					sugar = new Array('with','without'),
-					coffeesList = ['Arpeggio',0,'Capriccio',0,'Cosi',0,'Deca',0,'lun',0,'int',0,'Dulsao',0,'Finezzo',0,'Fortissio',0,'Indriya',0,'Kazaar',0,'Livanto',0,'Ristretto',0,'Roma',0,'Rosabaya',0,'Vivalto',0,'Volluto',0],
-					strengths = [9,5,3,2,3,7,5,3,7,10,12,6,10,8,6,4,4],
+					coffeesList = ['Arpeggio',0,'Capriccio',0,'Cosi',0,'Deca',0,'int',0,'lun',0,'Dulsao',0,'Finezzo',0,'Fortissio',0,'Indriya',0,'Livanto',0,'Ristretto',0,'Roma',0,'Rosabaya',0,'Vivalto',0,'Volluto',0],
+					coffeesStrengths = [9,5,3,2,3,7,5,3,7,10,6,10,8,6,4,4],
+					strengths = [2,,3,,4,,5,,6,,7,,8,,9,,10,],
 					lastConsoDate;
 
 			canvas.width = canvas.height = 16;
 			document.body.appendChild(canvas);
 
 			// FUNCTIONS
+			function isFirstRun(){
+				if (!localStorage.getItem("firstRun")){
+					localStorage.setItem("","");
+					localStorage.setItem("","");
+					localStorage.setItem("strengths", [2,,3,,4,,5,,6,,7,,8,,9,,10,]);
+					localStorage.setItem("firstRun", false);
+				}
+			}
+
 			function implementList(){
 				if (localStorage.getItem("coffeesDoses")){
 					var coffeesDoses = localStorage.getItem("coffeesDoses");
-
-					coffeesDoses = coffeesDoses.split(",");
+						coffeesDoses = coffeesDoses.split(",");
 					
 					for (i=0; i<coffeesDoses.length; i=i+3){
 						if(coffeesDoses[i+2] === "s" && coffeesDoses[i+1] !== "0") $("#"+coffeesDoses[i]).toggleClass(coffeesDoses[i] + " selected");
@@ -266,36 +313,36 @@
 
 			function chooseOne(){
 				var coffees = new Array();
-
-				$("#cafes").find('.selected').each(function(){
+					$("#coffees").find('.selected').each(function(){
 					coffees.push($(this).text());
 				});
 
 				if(coffees.length !== 0){
+
 					var theOne = coffees[Math.floor(Math.random()*coffees.length)],
 						coffeeClass = theOne;
 				
 					if(theOne === "Deca. lun."){ coffeeClass = "lun" };
 					if(theOne === "Deca. int."){ coffeeClass = "int" };
 
-					$("#verdict").css("display", "block")
-						.removeClass()
-						.addClass(coffeeClass)
-						.find("h1")
-						.html(theOne + " <span>" + doses[Math.floor(Math.random()*doses.length)] + " " + sugar[Math.floor(Math.random()*sugar.length)] + " sugar</span>");
+						$("#verdict").css("display", "block")
+							.removeClass()
+							.addClass(coffeeClass)
+							.find("h1")
+							.html(theOne + " <span>" + doses[Math.floor(Math.random()*doses.length)] + " " + sugar[Math.floor(Math.random()*sugar.length)] + " sugar</span>");
 
-					drawFavicon();
-					resetStrength();
-					indicateStrength(coffeeClass);
+						drawFavicon();
+						resetStrength();
+						indicateStrength(coffeeClass);
 
 				} else {
-					alert ("Please pick your coffees first !!");	
+					displayMessage('Please pick your coffees first !!', '#ffdfdf', 'red', true);
 				}
 			}
 
 			function indicateStrength(coffeeClass){
 				var position = $.inArray(coffeeClass, coffeesList),
-					strength = strengths[position/2];
+					strength = coffeesStrengths[position/2];
 
 				for (i=0; i<=strength; i=i+1){
 					$("#sc"+i).css("background-color","#fff");
@@ -326,7 +373,7 @@
 			    	newValue = parseInt(item.val(), 10) + delta,
 			    	coffee = $(item).prop("name");
 			    item.val(Math.max(newValue, 0));
-			    
+				    
 			    if(Math.max(newValue, 0) === 0){
 			    	$("#"+coffee).removeClass(coffee + " selected");
 			    } else {
@@ -341,7 +388,7 @@
 			function saveList(){
 				var coffeesDoses = new Array();
 
-				$("table").find('input').each(function(){
+				$("#slider").find('input').each(function(){
 					var name = $(this).prop("name"),
 						selected;
 
@@ -349,7 +396,7 @@
 
 					coffeesDoses.push(name,$(this).prop("value"),selected);
 				});
-				
+					
 				localStorage.setItem("coffeesDoses",coffeesDoses);
 			}
 
@@ -371,7 +418,7 @@
 				if(newCount === 0){ 
 					$("#"+coffeeName).removeClass(coffeeName+" selected");
 				}
-				
+					
 				saveList();
 				addToReport(coffeeName);
 
@@ -422,7 +469,7 @@
 					coffeeConso = coffeeConso.split(","),
 					total = 0,
 					max = 0;
-				
+					
 				// For each coffee get the number of drink cups
 				for (i=0; i<coffeeConso.length; i=i+2){
 					if(coffeeConso[i+1] === "0"){
@@ -444,13 +491,13 @@
 				// Add total count
 				$("#total").text(total);
 			}
-			
+				
 			function exportList(){
-			
+				
 			}
-			
+				
 			function importList(){
-			
+				
 			}
 
 			function isOnline(){
@@ -463,37 +510,111 @@
 				}
 			}
 
-			$(document).ready(function() {
-		
-				// AFFECTATIONS
-				$('#cafes').mobilyblocks();
+			function displayMessage(message, bg, color, timeout){
+				if (window.timer) clearTimeout(window.timer);
+				$("#allPurpose").text(message).css({'background': bg, 'color': color});
+				if (timeout) window.timer = setTimeout("displayMessage('Pick one !!', '#ccc', '#fff', false)", 1000)
+			}
+
+			function selectStrength(strength, selected){ // strengths = [1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,],
+				for (i=0; i<coffeesStrengths.length; i=i+1){
+					var coffee = coffeesList[i*2];
+					if (coffeesStrengths[i] === parseInt(strength) && $("input[name="+coffee+"]").prop("value") !== "0" ){
+						if (selected) {
+							if (!$("#"+coffee).hasClass(coffee + " selected")){
+								$("#"+coffee).addClass(coffee + " selected");
+							}
+						} else {
+							if ($("#"+coffee).hasClass(coffee + " selected")){
+								$("#"+coffee).removeClass(coffee + " selected");
+							}
+						}
+					}
+				}
+				saveStrength();
+				saveList();
+			}
+
+			function implementStrength(){ // strengths = [1,,2,,3,,4,,5,,6,,7,,8,,9,,10,],
+				if (localStorage.getItem("strengths")){
+					var strengths = localStorage.getItem("strengths");
+						strengths = strengths.split(",");
+					
+					for (i=0; i<strengths.length; i=i+2){
+						if(strengths[i+1] === "s"){
+							$("#chooseStrength span:nth-child(" + strengths[i] + ")").addClass("selected");
+						}
+					}
+				}
+			}
+
+			function saveStrength(){
+				var strengths = new Array();
+
+				$("#chooseStrength").find('span').each(function(){
+					$(this).hasClass("selected") === true ? selected = "s" : selected = "";
+					strengths.push($(this).text(),selected);
+				});
 				
+				localStorage.setItem("strengths", strengths);
+			}
+
+			function animateCoffees(num){
+				if (!num) num = 0;
+				$("#" + coffeesList[num]).fadeIn(200);
+				num = parseInt(num) + 2;
+				if (num === 34) $("#allPurpose").fadeIn(200);
+				if (num !== 34) window.timer = setTimeout("animateCoffees('"+ num +"')", 100);
+
+				//var displayed = new Array();
+
+				//num = Math.floor(Math.random()*(coffeesList.length));
+
+
+
+			}
+
+			$(document).ready(function() {
+
+				// LAYOUT
+				$("#coffees").css("margin-top", window.innerHeight/2 - 270);
+
+				// AFFECTATIONS
 				$('.coffee').click(function(){
 					var coffee = $(this).prop('id');
 
 					if($("input[name="+coffee+"]").prop("value") !== "0" ){
 						$(this).toggleClass(coffee + " selected");
 					} else {
-						alert ("There is no available cup for this coffee.")
+						if(coffee === "lun"){ coffee = "Deca. lun." };
+						if(coffee === "int"){ coffee = "Deca. int." };
+						displayMessage('There is no available cup for ' + coffee, '#ffdfdf', 'red', true);
 					}
 					
 					saveList();
 				});
 
-				$('.chooseOne').click(function(){
+				$(".chooseOne").click(function(){
 					chooseOne();
 				});
 
-				$('#takeThisOne').click(function(){
+				$("#takeThisOne").click(function(){
 					takeThisOne();
 				});
-				
+
 				$(".inc").click(function() {
 				    updateCount(this, 1);
 				});
 
 				$(".dec").click(function() {
 				    updateCount(this, -1);
+				});
+
+				$("#chooseStrength span").click(function(){
+					if ($(this).text() !== "1") {
+						$(this).toggleClass("selected");
+						selectStrength($(this).text(), $(this).hasClass("selected"));
+					}
 				});
 
 				$("#resetReport").click(function() {
@@ -504,31 +625,61 @@
 				$("#report").jav({
 					type  	 : 'modal',
 					modal	 : '#reportMod'
-				});	
+				});
+
+				$("#close").click(function(){
+					$('#verdict, canvas').css("display","none");
+				});
+
+				// TOOLTIPS
+				$("#chooseStrength span:nth-child(1)").jav({
+					message		: 'No coffee for this strength'
+				});
+
+				$("#chooseStrength span:nth-child(2)").jav({
+					message		: 'Deca'
+				});
+
+				$("#chooseStrength span:nth-child(3)").jav({
+					message		: 'Cosi, Deca. int., Finezzo'
+				});
+
+				$("#chooseStrength span:nth-child(4)").jav({
+					message		: 'Vivalto, Volluto'
+				});
+
+				$("#chooseStrength span:nth-child(5)").jav({
+					message		: 'Capriccio, Dulsao'
+				});
+
+				$("#chooseStrength span:nth-child(6)").jav({
+					message		: 'Livanto, Rosabaya'
+				});
+
+				$("#chooseStrength span:nth-child(7)").jav({
+					message		: 'Deca. lun., Fortissio'
+				});
+
+				$("#chooseStrength span:nth-child(8)").jav({
+					message		: 'Roma'
+				});
+
+				$("#chooseStrength span:nth-child(9)").jav({
+					message		: 'Arpeggio'
+				});
+
+				$("#chooseStrength span:nth-child(10)").jav({
+					message		: 'Ristretto'
+				});
 
 				// FUNCTIONS TO RUN
+				isFirstRun();
 				implementList();
+				implementStrength();
 				initReport();
 				isOnline();
-			});	
-
-			// APPCACHE UPDATE
-			window.addEventListener('load', function(e) {
-
-				window.applicationCache.addEventListener('updateready', function(e) {
-					if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-						// Browser downloaded a new app cache.
-						// Swap it in and reload the page to get the new hotness.
-						window.applicationCache.swapCache();
-						if (confirm('A new version of this site is available. Load it?')) {
-							window.location.reload();
-						}
-			    	} else {
-						// Manifest didn't changed. Nothing new to server.
-					}
-				}, false);
-
-			}, false);
+				animateCoffees();	
+			});
 		</script>
 
 	</body>
