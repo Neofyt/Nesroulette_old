@@ -1,0 +1,58 @@
+.bar-chart {
+    width: 700px;
+    height: 500px;
+    padding-top: 1em;
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.bar-chart p em {
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    line-height: 2em;
+    width: 650px;
+    display: block;
+    text-align: center;
+    border-top: 1px solid #444
+}
+
+.bar-chart p em:first-child {
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 1em;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -moz-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(Dx=0, Dy=0, SizingMethod='auto expand', M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17)"
+}
+
+.bar-chart dl {
+    display: block;
+    margin: 0 0 0.25em 0;
+    height: 2em;
+    line-height: 2em;
+    white-space: nowrap;
+    position: relative
+}
+
+.bar-chart dl dt,.bar-chart dl dd {
+    display: block;
+    margin: 0
+}
+
+.bar-chart dl dd {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    text-align: right;
+    padding-right: 0.5em
+}

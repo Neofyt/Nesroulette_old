@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# Build 2012-04-06.6
+
+CACHE:
+index.html
+
+css/layout.css
+css/barchart.css
+
+js/jquery-1.7.2.min.js
+js/jquery.jAvertis.js
+js/mobilyblocks.js
+js/prefixfree.min.js
+
+img/close.png
